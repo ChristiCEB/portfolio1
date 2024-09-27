@@ -1,0 +1,137 @@
+/* General Body and Container */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/mnt/data/image.png'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Header for 'Hovedside' */
+.main-header {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* 'Litt om meg' Section */
+.about-me {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-me a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Blank Section (for future content) */
+.blank-section {
+    background-color: white;
+    border-radius: 10px;
+    height: 250px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+.sidebar .nav-item {
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #2C3E50;
+    color: white;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sidebar .nav-item.active {
+    background-color: #1ABC9C;
+}
+
+.sidebar .nav-item:hover {
+    background-color: #34495E;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .sidebar .nav-item {
+        width: 100px;
+        font-size: 18px;
+    }
+
+    .main-header {
+        font-size: 32px;
+    }
+
+    .about-me h2 {
+        font-size: 22px;
+    }
+
+    .about-me p, .about-me a {
+        font-size: 16px;
+    }
+
+    .blank-section {
+        height: 150px;
+    }
+}

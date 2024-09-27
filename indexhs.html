@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hovedside</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/mnt/data/image.png'); /* Background image */
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 1;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        .main-header {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .about-me {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .about-me h2 {
+            font-size: 24px;
+        }
+
+        .about-me p {
+            font-size: 18px;
+        }
+
+        .sidebar {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar .nav-item {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar .nav-item:hover {
+            background-color: #34495E;
+        }
+
+        .sidebar .nav-item.active {
+            background-color: #1ABC9C;
+        }
+
+        .blank-section {
+            background-color: #fff;
+            height: 200px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="main-header">
+                Hovedside
+            </div>
+            <div class="about-me">
+                <h2>Litt om meg</h2>
+                <p>Jeg heter Christian og jeg er glad i programmering og gaming, jeg bor i Klokkarstua med moren og søstra mi.</p>
+                <a href="#">Les mer..</a>
+            </div>
+            <div class="blank-section"></div>
+        </div>
+
+        <div class="sidebar">
+            <a href="#" class="nav-item active">Hovedside</a>
+            <a href="#" class="nav-item">Om meg</a>
+            <a href="#" class="nav-item">Prosjekter</a>
+            <a href="#" class="nav-item">CV</a>
+        </div>
+    </div>
+</body>
+</html>
